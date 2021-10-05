@@ -1,10 +1,13 @@
+function random(){
+    let number = parseInt(Math.random() * 10000)
+
+    return number;
+}
 
 class Item{
 
-    static lastId = 0;
-
     constructor(text){
-        this.id = Item.lastId++;
+        this.id = random();
         this.text = text;
         this.done = false;
 
